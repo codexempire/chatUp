@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>ChatUP</title>
+</head>
+<body>
+    <div class="container" id='container'>
+        <aside>
+            <div class="logo">
+                <span>ChatUP</span>
+            </div>
+            <ul class="users-list">
+            </ul>
+            <button class="logout" id='logout'>LOGOUT</button>
+        </aside>
+        <main>
+            <div class="chat-view" id="chat-view"></div>
+            <input type="text" class="chat-input" autocomplete="false" autofill="false" id="chat-input" placeholder="Hit enter to send message" />
+        </main>
+    </div>
+
+    <div class="auth-modals" id="auth-modals">
+
+        <div class="form">
+            <input type="text" id="name" placeholder="Enter Name" autocomplete="false" autofill="false">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button id="auth">JOIN</button>
+        </div>
+
+        <!-- <div class="auth-buttons">
+            <button id="login">LOGIN</button>
+            <button class="signup">SIGNUP</button>
+        </div> -->
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
